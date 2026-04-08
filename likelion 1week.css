@@ -1,0 +1,38 @@
+.first-card {
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.name{
+    color:black;
+}
+
+.first-card p {
+    color: black;
+}
+
+.first-card p1 {
+    color: blue;
+    font-weight: 600;
+}
+
+
+.second-card {
+    background-color: whitesmoke;
+    padding: 10px
+   
+}
+
+.second-card p{
+    color: black;
+}
+
+.second-card p2 {
+    color: blue;
+    font-weight: 600
+}
+.second-card p3 {
+    color: black;
+    }
