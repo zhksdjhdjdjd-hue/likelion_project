@@ -1,0 +1,139 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;         
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.card {
+    width: 100%;          
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+     
+    border: 2px solid transparent; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    cursor: pointer;
+}
+
+
+
+
+.card img {
+    width: 100%;
+    height: 200px;        
+    object-fit: cover;    
+}
+.card-body{
+    padding: 16px;
+}
+.role{
+    color: blue;
+}
+
+.card:hover {
+    border-color: #6c63ff; 
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.5); 
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: #f0f4ff;
+}
+
+.controls button {
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+#toggleFormBtn {
+    border-color: #4a90e2;
+    color: #4a90e2;
+}
+
+#addForm {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#addForm input, #addForm select, #addForm textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#addForm textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+#addForm label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.form-buttons button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.form-buttons button:first-child {
+    background: white;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    font-weight: bold;
+}
